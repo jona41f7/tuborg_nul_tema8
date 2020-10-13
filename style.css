@@ -391,6 +391,45 @@ video {
 }
 
 
+.piechart {
+    background: #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+
+}
+
+.pie1 {
+    fill: none;
+    stroke: #123456;
+    stroke-width: 200;
+    stroke-dasharray: 10 632;
+    transition: all 1s ease;
+
+}
+
+.pie2 {
+    fill: none;
+    stroke: red;
+    stroke-width: 200;
+    stroke-dasharray: 10 632;
+    stroke-dashoffset: -10;
+    transition: all 1s ease;
+
+}
+
+.pie3 {
+    fill: none;
+    stroke: green;
+    stroke-width: 200;
+    stroke-dasharray: 10 632;
+    stroke-dashoffset: -20;
+    transition: all 1s ease;
+
+}
+
+
 
 
 @media(min-width:740px) {

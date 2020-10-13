@@ -68,3 +68,58 @@ function onClickMenu() {
     document.getElementById("nav1").classList.toggle("change");
     document.getElementById("bgeffekt").classList.toggle("changebg");
 }
+
+
+document.addEventListener("DOMContentLoaded", hentJson);
+
+
+let valueArray = [];
+let offsetArray = [0];
+let omkreds = 200 * Math.PI;
+let myData;
+let dataArray = [];
+
+async function hentJson() {
+    let myJson = await fetch("pie.json");
+    myData = await myJson.json();
+    //console.log(myData);
+    lavArray();
+}
+
+function lavArray() {
+    myData.forEach(data => {
+        //console.log(data.value)
+        let tilProcent = data.value * omkreds / 100;
+        //console.log(tilProcent);
+        offsetArray.push(tilProcent + offsetArray[offsetArray.length - 1]);
+        valueArray.push(tilProcent);
+        dataArray.push(data.value);
+
+
+
+    })
+    //console.log(valueArray);
+    //console.log(offsetArray);
+    animer();
+}
+
+
+function animer() {
+
+    document.querySelectorAll(".piechart circle").forEach((pie, i) => {
+        pie.style.strokeDasharray = valueArray[i] + " " + omkreds;
+        pie.style.strokeDashoffset = -offsetArray[i];
+        pie.setAttribute("data-value", dataArray[i]);
+        // console.log(pie);
+    });
+
+
+}
+
+document.querySelector(".piechart").addEventListener("mouseover", e => {
+
+    let valgt = e.target.getAttribute("data-value");
+    if (valgt) {
+        console.log("procent er:", valgt);
+    }
+});

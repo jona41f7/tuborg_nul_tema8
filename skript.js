@@ -62,6 +62,9 @@ $(window).scroll(function () {
 
 
 
+/**bruger menu **/
+
+
 function onClickMenu() {
     console.log("klik burgermenu");
     document.getElementById("menuknap").classList.toggle("change");
@@ -69,6 +72,9 @@ function onClickMenu() {
     document.getElementById("bgeffekt").classList.toggle("changebg");
 }
 
+
+
+/** piediagram **/
 
 document.addEventListener("DOMContentLoaded", hentJson);
 
@@ -121,5 +127,7 @@ document.querySelector(".piechart").addEventListener("mouseover", e => {
     let valgt = e.target.getAttribute("data-value");
     if (valgt) {
         console.log("procent er:", valgt);
+        document.querySelector("h3").textContent = "procent er:" + valgt;
+
     }
 });

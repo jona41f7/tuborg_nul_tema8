@@ -127,7 +127,8 @@ document.querySelector(".piechart").addEventListener("mouseover", e => {
     let valgt = e.target.getAttribute("data-value");
     if (valgt) {
         console.log("procent er:", valgt);
-        document.querySelector("h3").textContent = "procent er:" + valgt;
+        document.querySelector("h3").textContent = valgt + "%";
+
 
     }
 });

@@ -1,18 +1,23 @@
  [
      {
-         "value": 50
+         "value": 50,
+         "ingrediens": "Vand"
         },
      {
-         "value": 10
+         "value": 10,
+         "ingrediens": "Bygmalt"
     },
      {
-         "value": 5
+         "value": 5,
+         "ingrediens": "Kuldioxid"
     },
      {
-         "value": 2
+         "value": 2,
+         "ingrediens": "Naturlige aromaer"
     },
      {
-         "value": 33
+         "value": 33,
+         "ingrediens": "Humle"
     }
 
 

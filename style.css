@@ -141,6 +141,14 @@ h2 {
     padding: 10px 0 0 0;
 }
 
+h3 {
+    font-size: 1.2em;
+    letter-spacing: 0.09rem;
+    line-height: 1.1;
+    font-family: 'Myriad Pro';
+    padding: 10px 0 0 0;
+}
+
 p {
     max-width: 30em;
     font-size: 1em;
@@ -215,6 +223,10 @@ a {
     transition: all 2s ease-out;
     padding: 0px 0px 0px 0px;
 
+}
+
+#trainMotion_contrainer {
+    overflow: hidden;
 }
 
 

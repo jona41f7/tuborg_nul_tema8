@@ -20,7 +20,7 @@ function toggleMenu() {
     if (erSkjult == true) {
         document.querySelector("#menuknap").textContent = "☰";
     } else {
-        document.querySelector("#menuknap").textContent = "✖";
+        document.querySelector("#menuknap").textContent = "x";
     }
 }
 

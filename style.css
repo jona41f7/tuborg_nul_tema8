@@ -481,7 +481,7 @@ video {
 
 #chart line {
     stroke: #000000;
-    stroke-width: 1;
+    stroke-width: 0.7;
 
 }
 
@@ -562,7 +562,7 @@ video {
         letter-spacing: 0.09rem;
         line-height: 1.1;
         font-family: 'cheltenham_condensedbold';
-        padding: 400px 0 0 0;
+        padding: 380px 0 0 0;
         margin: 0 0 0 0;
         color: white;
 
@@ -599,7 +599,7 @@ video {
         transform: translate(0%, 0%);
         transition: all 2s ease-out;
         padding: 0px 0px 0px 0px;
-        margin: 50px 250px 0 0;
+        margin: 0px 250px 0 0;
     }
 
 
@@ -663,5 +663,27 @@ video {
 
     }
 
+
+}
+
+@media(min-width:1500px) {
+    #trainMotion img {
+        transform: translate(0%, 0%);
+        transition: all 2s ease-out;
+        padding: 0px 0px 0px 0px;
+        margin: 50px 250px 0 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.09rem;
+        line-height: 1.1;
+        font-family: 'cheltenham_condensedbold';
+        padding: 420px 0 0 0;
+        margin: 0 0 0 0;
+        color: white;
+
+
+    }
 
 }

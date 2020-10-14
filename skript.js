@@ -145,19 +145,5 @@ document.querySelector(".piechart").addEventListener("mouseover", e => {
         console.log("procent er:", valgt);
         document.querySelector("h3").textContent = valgt + "%";
 
-
     }
-});
-
-easyScrollDots({
-
-    // sets to true if you have a fixed navigation
-    'fixedNav': false,
-
-    // unique ID of your fixed navigation
-    'fixedNavId': '',
-
-    // set to true if your navigation is only sticky when scrolling up
-    'fixedNavUpward': false
-
 });

@@ -357,7 +357,7 @@ video {
     height: 350px;
     border-radius: 50%;
     transform: rotate(-90deg);
-    box-shadow: 8px 8px 25px #9fbab5;
+    box-shadow: 6px 6px 30px rgba(46, 46, 46, 0.22);
 
 }
 
@@ -410,7 +410,57 @@ video {
 
 }
 
+/*** smag diagram***/
+.duft {
+    position: relative;
+}
 
+#barchart {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#chart line {
+    stroke: #000000;
+    stroke-width: 1;
+
+}
+
+#chart text {
+    font-size: 0.5em;
+    letter-spacing: 0.09rem;
+    line-height: 2rem;
+    font-family: 'Myriad Pro';
+    padding: 20px 0 0 0;
+    font-weight: 200;
+
+}
+
+.bars {
+    stroke-width: 20;
+    stroke: blue;
+}
+
+.fylde {
+    width: 19px;
+    position: absolute;
+    top: 60px;
+    left: 170px;
+}
+
+.livlighed {
+    width: 19px;
+    position: absolute;
+    top: 160px;
+    left: 290px;
+}
+
+.bitterhed {
+    width: 19px;
+    position: absolute;
+    top: 260px;
+    left: 120px;
+}
 
 
 @media(min-width:740px) {

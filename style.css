@@ -12,21 +12,24 @@ html {
 }
 
 #menuknap {
-    display: inline-block;
+    position: absolute;
+    right: 10px;
     color: white;
     font-size: 3rem;
     padding: 0px 20px 0px 0px;
     color: #FAC177;
     cursor: pointer;
+    z-index: 1;
 
 }
 
 #menu {
-    position: relative;
+    position: absolute;
+    margin: 0px 0px 30px -150px;
     list-style-type: none;
     transition: 0.8s;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.37296925606179976) 76%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 8px 0 0 10px;
+
+
     padding: 0 0 10px 0;
 }
 
@@ -55,7 +58,7 @@ img {
     width: 70px;
     height: 70px;
     margin: 5px 0px 0px 20px;
-    position: fixed;
+
 
 }
 
@@ -399,8 +402,8 @@ video {
 
 .piechart {
     background: #ffffff;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     transform: rotate(-90deg);
     box-shadow: 6px 6px 30px rgba(46, 46, 46, 0.22);
@@ -610,6 +613,24 @@ video {
         max-width: 500px;
 
         margin: 10px 90px 0 0;
+    }
+
+    .logobillede {
+        width: 70px;
+        height: 70px;
+        margin: 5px 0px 0px 20px;
+        position: fixed;
+
+    }
+
+    .piechart {
+        background: #ffffff;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        transform: rotate(-90deg);
+        box-shadow: 6px 6px 30px rgba(46, 46, 46, 0.22);
+
     }
 
 

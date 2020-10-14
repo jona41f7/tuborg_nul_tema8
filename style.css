@@ -20,17 +20,25 @@ html {
     color: #FAC177;
     cursor: pointer;
     z-index: 1;
+    font-family: 'Myriad Pro';
+
+}
+
+nav {
+    overflow: hidden;
 
 }
 
 #menu {
-    position: absolute;
-    margin: 0px 0px 30px -150px;
+    margin: 0px 0px 30px 50px;
     list-style-type: none;
     transition: 0.8s;
+    text-align: left;
+    display: block;
+    cursor: pointer;
 
 
-    padding: 0 0 10px 0;
+    padding: 0px 30px 0px 0px;
 }
 
 /*------ SKJUL ------*/
@@ -94,7 +102,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 0.09rem;
     line-height: 1.1;
     font-family: 'Myriad Pro';
@@ -246,9 +254,10 @@ header {
 }
 
 nav {
-    padding: 40px 50px 20px 0px;
+    padding: 20px 0px 20px 20px;
+
     text-decoration: none;
-    color: white;
+
     font-family: 'cheltenham_condensedbold';
     margin: 0;
 
@@ -258,7 +267,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-family: 'cheltenham_condensedbold';
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 
 
 
@@ -579,10 +588,9 @@ video {
     }
 
     a {
-        font-size: 1.3em;
+        font-size: 1.1em;
         letter-spacing: 0.03rem;
-        font-weight: 300;
-
+        font-weight: 200;
         font-family: 'cheltenham_condensedbold';
         color: #4332CF;
     }
@@ -630,6 +638,28 @@ video {
         border-radius: 50%;
         transform: rotate(-90deg);
         box-shadow: 6px 6px 30px rgba(46, 46, 46, 0.22);
+
+    }
+
+    nav {
+        padding: 40px 50px 20px 0px;
+        text-decoration: none;
+        color: white;
+        font-family: 'cheltenham_condensedbold';
+        margin: 0;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-family: 'cheltenham_condensedbold';
+        padding: 20px;
+
+
+
+
+
 
     }
 

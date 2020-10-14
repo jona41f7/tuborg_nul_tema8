@@ -1,3 +1,29 @@
+/**bruger menu **/
+
+window.addEventListener("load", sidenVises);
+
+
+function sidenVises() {
+    console.log("sidenVises");
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+    document.querySelector("#burgerknap").classList.add("font");
+}
+
+
+function toggleMenu() {
+    console.log("toggleMenu");
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        document.querySelector("#menuknap").textContent = "✖";
+    }
+}
+
 var windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
     lastTop;
 
@@ -62,16 +88,6 @@ $(window).scroll(function () {
 
 
 
-/**bruger menu **/
-
-
-function onClickMenu() {
-    console.log("klik burgermenu");
-    document.getElementById("menuknap").classList.toggle("change");
-    document.getElementById("nav1").classList.toggle("change");
-    document.getElementById("bgeffekt").classList.toggle("changebg");
-}
-
 
 
 /** piediagram **/
@@ -131,4 +147,17 @@ document.querySelector(".piechart").addEventListener("mouseover", e => {
 
 
     }
+});
+
+easyScrollDots({
+
+    // sets to true if you have a fixed navigation
+    'fixedNav': false,
+
+    // unique ID of your fixed navigation
+    'fixedNavId': '',
+
+    // set to true if your navigation is only sticky when scrolling up
+    'fixedNavUpward': false
+
 });

@@ -422,7 +422,8 @@ video {
 
 #barchart {
     max-width: 500px;
-    margin-top: 20px;
+
+    margin: 20px 0px 0 0;
 }
 
 #chart line {
@@ -449,22 +450,31 @@ video {
 .fylde {
     width: 19px;
     position: absolute;
-    top: 60px;
-    left: 170px;
+    top: 54px;
+    left: 90px;
 }
 
 .livlighed {
     width: 19px;
     position: absolute;
-    top: 160px;
+    top: 156px;
     left: 290px;
 }
 
 .bitterhed {
     width: 19px;
     position: absolute;
-    top: 260px;
-    left: 120px;
+    top: 258px;
+    left: 90px;
+}
+
+.chartfont {
+    font-size: 2em;
+    letter-spacing: 0.09rem;
+    line-height: 2rem;
+    font-family: 'Myriad Pro';
+    padding: 20px 0 0 0;
+    font-weight: 200;
 }
 
 
@@ -553,6 +563,12 @@ video {
     #trainMotion.choochoo img {
         transform: translate(270%, 0%);
 
+    }
+
+    #barchart {
+        max-width: 500px;
+
+        margin: 10px 90px 0 0;
     }
 
 

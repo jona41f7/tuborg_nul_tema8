@@ -162,7 +162,7 @@ a {
     font-size: 1.3em;
     letter-spacing: 0.03rem;
     font-weight: 300;
-
+    text-decoration: none;
     font-family: 'cheltenham_condensedbold';
     color: #4332CF;
 }
@@ -531,6 +531,54 @@ video {
     font-weight: 200;
 }
 
+/****SoMe***/
+
+footer {
+    position: relative;
+}
+
+
+#favicon_container {
+    position: absolute;
+    cursor: pointer;
+    top: 3vh;
+    right: 7.3vw;
+}
+
+#favicon {
+    background-image: url(svg/instagram.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+#favicon-face {
+    background-image: url(svg/facebook.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+#favicon-you {
+    background-image: url(svg/youtube.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+
 
 
 @media(min-width:740px) {
@@ -662,6 +710,46 @@ video {
 
 
 
+
+    }
+
+    #favicon_container {
+        position: absolute;
+        cursor: pointer;
+        top: 10vh;
+        right: 7.3vw;
+    }
+
+    #favicon {
+        background-image: url(svg/instagram.svg);
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 10px;
+
+    }
+
+    #favicon-face {
+        background-image: url(svg/facebook.svg);
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 10px;
+
+    }
+
+    #favicon-you {
+        background-image: url(svg/youtube.svg);
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 10px;
 
     }
 

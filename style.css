@@ -11,21 +11,53 @@ html {
 
 }
 
+
+/*** header ***/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav {
+    padding: 20px 0px 20px 20px;
+
+    text-decoration: none;
+
+    font-family: 'cheltenham_condensedbold';
+    margin: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'cheltenham_condensedbold';
+    padding: 20px 20px 20px 0px;
+}
+
+
+nav a:hover {
+    color: #BEE0D9;
+
+}
+
+
+
+
+
 #menuknap {
     position: absolute;
     right: 10px;
     color: white;
     font-size: 3rem;
     padding: 0px 20px 0px 0px;
-    color: #FAC177;
+    color: #ffffff;
     cursor: pointer;
     z-index: 1;
     font-family: 'Myriad Pro';
-
-}
-
-nav {
-    overflow: hidden;
 
 }
 
@@ -36,10 +68,16 @@ nav {
     text-align: left;
     display: block;
     cursor: pointer;
-
-
-    padding: 0px 30px 0px 0px;
+    padding: 60px 8px 0px 0px;
 }
+
+#menu.hidden {
+    transform: translateX(0);
+    opacity: 0;
+    padding: 0;
+}
+
+
 
 /*------ SKJUL ------*/
 .hidden {
@@ -244,43 +282,6 @@ body {
 
 
 
-/*** header ***/
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-nav {
-    padding: 20px 0px 20px 20px;
-
-    text-decoration: none;
-
-    font-family: 'cheltenham_condensedbold';
-    margin: 0;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: 'cheltenham_condensedbold';
-    padding: 20px 20px 20px 0px;
-
-
-
-
-
-
-}
-
-
-nav a:hover {
-    color: #FAC177;
-
-}
 
 #logo {
 
@@ -531,6 +532,7 @@ video {
 }
 
 
+
 @media(min-width:740px) {
     main {
         max-width: 1400px;
@@ -588,7 +590,7 @@ video {
     }
 
     a {
-        font-size: 1.1em;
+        font-size: 1.2em;
         letter-spacing: 0.03rem;
         font-weight: 200;
         font-family: 'cheltenham_condensedbold';
@@ -642,7 +644,7 @@ video {
     }
 
     nav {
-        padding: 40px 50px 20px 0px;
+        padding: 30px 50px 20px 0px;
         text-decoration: none;
         color: white;
         font-family: 'cheltenham_condensedbold';
